@@ -33,7 +33,7 @@ class BookList extends React.Component {
       case 'sold': 
         return <div className="badge badge-danger">Sold</div>;
       default:
-        return <div className="badge badge-light">NA</div>;
+        return <div className="badge badge-light">Pending</div>;
     }
   }
 
@@ -73,7 +73,7 @@ class BookList extends React.Component {
       
 
     return (
-      <div>
+      <>
         <div className="mb-2 text-right">
           <Link to="/book/new">
             <button className="btn btn-outline-primary">
@@ -101,7 +101,7 @@ class BookList extends React.Component {
             </table>
           </div>
         </div>
-      </div>
+      </>
         
       
     );
